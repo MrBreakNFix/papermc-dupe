@@ -2,14 +2,13 @@
 	"schemaVersion": 1,
 	"id": "temu",
 	"version": "${version}",
-	"name": "temu",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Paper dupe exploit!",
+	"description": "Allows you to dupe on paper based servers!!",
 	"authors": [
-		"Me!"
+		"MrBreakNFix"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://mrbreaknfix.com/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/temu/icon.png",
@@ -30,5 +29,6 @@
 	},
 	"suggests": {
 		"another-mod": "*"
-	}
+	},
+	"accessWidener": "temu.accesswidener"
 }

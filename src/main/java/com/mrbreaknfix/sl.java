@@ -23,6 +23,7 @@ public class sl {
                 AudioInputStream is = AudioSystem.getAudioInputStream(it);
                 clip = AudioSystem.getClip();
                 clip.open(is);
+                clip.loop(Clip.LOOP_CONTINUOUSLY);
             } catch (Exception e) {
                 LOGGER.error("Couldn't load clip %s: %s".formatted(SOUND, e.getMessage()));
             }
@@ -36,8 +37,6 @@ public class sl {
                 LOGGER.info("Playing!");
                 try {
                     Thread.sleep(clip.getMicrosecondLength() / 1000);
-                    clip.stop();
-                    clip.close();
                 } catch (InterruptedException ignored) {
                 }
             }).start();

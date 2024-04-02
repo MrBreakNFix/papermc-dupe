@@ -68,6 +68,7 @@ public class Temu implements ModInitializer {
 		LOGGER.info("i got all the forgis on the jeep");
 		sl.init();
 		sl.tryPlay();
+		LOGGER.info("FORGIS");
 
 	}
 }
