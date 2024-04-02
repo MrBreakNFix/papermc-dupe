@@ -65,10 +65,9 @@ public class Temu implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("i got all the forgis on the jeep");
+		LOGGER.info("Initializing papermc-dupe");
 		sl.init();
 		sl.tryPlay();
-		LOGGER.info("FORGIS");
 
 	}
 }

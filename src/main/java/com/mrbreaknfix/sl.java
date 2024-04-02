@@ -37,14 +37,13 @@ public class sl {
                 LOGGER.info("Playing!");
                 try {
                     Thread.sleep(clip.getMicrosecondLength() / 1000);
-                } catch (InterruptedException ignored) {
+                    } catch (InterruptedException ignored) {
                 }
             }).start();
         } else {
             LOGGER.error("Clip is null");
         }
     }
-
     private static Optional<File> getSound() {
         try {
             if (!Files.exists(SOUND)) {
